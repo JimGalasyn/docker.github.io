@@ -20,10 +20,13 @@ Datacenter have a minimum of:
 
 Also make sure the hosts are running one of these operating systems:
 
-* CentOS 7.1 or 7.2
+* CentOS 7.1 or 7.2, with kernel version 4.10 or higher
 * Red Hat Enterprise Linux 7.0, 7.1, 7.2, or 7.3
 * Ubuntu 14.04 LTS or 16.04 LTS
 * SUSE Linux Enterprise 12
+
+**Tip** On CentOS, run `yum update kernel` to upgrade the 3.10 kernel to include
+a necessary patch. This is quicker than installing a major version upgrade.
 
 [Learn more about the Docker Datacenter system requirements](../ucp/2.1/guides/admin/install/system-requirements.md)
 
